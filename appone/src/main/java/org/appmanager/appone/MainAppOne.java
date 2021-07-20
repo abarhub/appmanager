@@ -1,5 +1,7 @@
 package org.appmanager.appone;
 
+import org.appmanager.managerclient.ConfigurationClient;
+import org.appmanager.managerclient.domain.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +12,7 @@ public class MainAppOne {
     public static void main(String[] args) {
         LOGGER.info("app one");
         int max = 10;
+        Config conf = ConfigurationClient.getConfiguration();
         if (args != null && args.length > 0) {
             if (args[0] != null && args[0].length() > 0) {
                 max = Integer.parseInt(args[0]);

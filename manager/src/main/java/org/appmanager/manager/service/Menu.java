@@ -20,6 +20,7 @@ public class Menu {
         boolean end = false;
         int result = 0;
         while (!end) {
+            System.out.println("Choice : ");
             try {
                 int i = sc.nextInt();
                 if (i == 1) {
