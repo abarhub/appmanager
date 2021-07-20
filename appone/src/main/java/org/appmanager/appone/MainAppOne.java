@@ -9,7 +9,10 @@ public class MainAppOne {
 
 
     public static void main(String[] args) {
-        LOGGER.info("manager");
+        LOGGER.info("app one");
+        for(int i=0;i<10;i++){
+            System.out.println("value "+(i+1));
+        }
     }
 
 }
