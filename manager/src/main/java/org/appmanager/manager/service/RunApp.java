@@ -27,7 +27,7 @@ public class RunApp {
         }
         liste.addAll(app);
         builder.command(liste);
-        builder.directory(new File(System.getProperty("user.home")));
+        //builder.directory(new File(System.getProperty("user.home")));
         Process process = builder.start();
         var tmp=Executors.newCachedThreadPool();
         StreamGobbler streamGobbler = new StreamGobbler(process.getInputStream(), x->LOGGER.info("out: {}",x));

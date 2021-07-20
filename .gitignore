@@ -3,3 +3,4 @@
 .idea/
 /appone/target/
 /managerclient/target/
+/appone/dependency-reduced-pom.xml

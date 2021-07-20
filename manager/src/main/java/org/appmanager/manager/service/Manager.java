@@ -20,7 +20,8 @@ public class Manager {
                 LOGGER.info("run app one");
                 RunApp runApp=new RunApp();
                 try {
-                    runApp.run(List.of("echo","aaa"));
+                    //runApp.run(List.of("echo","aaa"));
+                    runApp.run(List.of("java","-jar","./appone/target/appone-1.0.0-SNAPSHOT.jar"));
                 } catch (IOException | InterruptedException e) {
                     LOGGER.error("Erreur", e);
                 }
